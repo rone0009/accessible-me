@@ -76,3 +76,7 @@ form button {
   background-color: brown;
   color: white;
 }
+
+.text-bold{
+  font-weight: bold;
+}

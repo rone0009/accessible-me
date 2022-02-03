@@ -14,27 +14,37 @@
 
 <body>
   <div class="container">
+    
     <div class="site-header">
+      
       <h1 role="heading">Jam Box Studios</h1>
-      <div class="main-nav">
-              <ul>
-          <li class="current"><a href="#" aria-label="takes you to fome page" aria-current="page">Home</a></li>
-          <li><a href="#" aria-label="takes you to products">Products</a></li>
-          <li><a href="#" aria-label="adds reservation">Reservation</a></li>
-          <li><a href="#" aria-label="Tour of the studio">Studio</a></li>
+      
+      <nav role="navigation" class="main-nav">
+        <ul>
+          <li class="current"><a href="#" aria-label="Takes you to Home page" aria-current="page">Home</a></li>
+          <li><a href="#" aria-label="Takes you to the Products page">Products</a></li>
+          <li><a href="#" aria-label="Takes you to the Reservation page">Reservation</a></li>
+          <li><a href="#" aria-label="Takes you to the Tour page of the studio">Studio</a></li>
         </ul>
-      </div>
+      </nav>
+      
       <a href="#main-content">Skip to main content</a>  
-      <img role="banner" src="https://placekitten.com/1200/900"  aria-details="image of cat" class="banner" alt="image of a cat" title="image of a cat">
+      
+      <img role="banner" src="https://placekitten.com/1200/900"  aria-details="image of cat" class="banner" alt="This is an image of a little pussycat" title="Pussycat Image">
+    
     </div>
     
     <main id="main-content" role="main">
-      <h1>Welcome to Jam Box</h1>
+      
+      <h1 role="heading">Welcome to Jam Box</h1>
+      
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus laboriosam praesentium nostrum ipsa eveniet, officia deserunt cumque eius esse enim, ipsam accusantium autem nihil quaerat sequi perferendis optio quia veritatis.</p>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam perferendis expedita sed itaque odit ipsam omnis, eos voluptates magni fugit culpa voluptatibus, inventore eaque, eligendi voluptatum! Voluptate iusto error voluptatibus.</p>
       
       <section class="owner" itemscope itemtype="https://schema.org/Person">
+      
         <h1 role="heading">Meet the owner</h1>
+      
         <ul>
           <li>Name: <span itemprop="name">John Doe</span></li>
           <li>Title: <span itemprop="jobTitle"> CEO </span></li>
@@ -50,25 +60,37 @@
           <span itemprop="addressLocality">Musicville</span>, <span itemprop="addressRegion">Danceistan</span>
           <span itemprop="postalCode">B3T 0L0</span>
         </p>
+      
       </section>
       
       <section class="contact-section">
+      
         <h1 role="heading">Contact Us</h1>
-        <form action="thanks.html">
-          <label>Full Name</label>
-          <input type="text" placeholder="Full Name">
-          <input type="text" placeholder="Email">
-          <input type="text" placeholder="Subject">
-          <b>Your Message</b>
-          <textarea></textarea>
-          <button type="submit">Send</button>
+      
+        <form action="thanks.html" role="form">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" placeholder="Full Name">
+          <label for="email">Email</label>
+          <input type="text" id="email" placeholder="Email">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" placeholder="Subject">
+          <div class="text-bold">
+          <label for="message">Your Message</label>
+          </div>
+          <textarea id="message"></textarea>
+          <button type="submit" role="button">Send</button>
         </form>
+      
       </section>
+    
     </main>
+    
     <footer role="contentinfo" class="site-footer">
       &copy; 2021 Jam Box Studios
     </footer>
+  
   </div>
+
 </body>
 
 </html>
